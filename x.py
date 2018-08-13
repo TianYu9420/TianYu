@@ -805,7 +805,7 @@ def lineBot(op):
                 elif text.lower() == 'byeall':
                     if msg.toType == 2:
                         print ("[ 19 ] KICK ALL MEMBER")
-                        _name = msg.text.replace("Byeall","蹦")
+                        _name = msg.text.replace("Byeall","See u")
                         gs = cl.getGroup(msg.to)
                         cl.sendMessage(msg.to,"冥魔军に栄光あれ☆")
                         targets = []
