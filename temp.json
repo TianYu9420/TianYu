@@ -20,6 +20,7 @@
     "protect": false,
     "qrprotect": false,
     "reread": false,
+    "react": {
     "share": false,
     "timeline": false,
     "userAgent": [
