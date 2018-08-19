@@ -908,14 +908,14 @@ def lineBot(op):
 #                        cl.sendMessage(to,mc + "\n╚══[ Finish ]")
 #
 #==============================================================================#
-                elif text.lower() == '/bklist':
+                elif text.lower() == 'backlist':
                     ret = "[關鍵字列表]\n"
                     for name in settings['react']:
                         ret +="->" + name + "\n"
                     cl.sendMessage(to, ret)
                 if msg.text in settings['react']:
                     cl.sendMessage(to, settings['react'][msg.text])
-                elif msg.text.lower().startswith("/bk_add"):
+                elif msg.text.lower().startswith("back_add"):
                     list_ = msg.text.split(":")
                     if list_[1] not in settings['react']:
                         try:
@@ -927,7 +927,7 @@ def lineBot(op):
                             cl.sendMessage(to, "新增關鍵字失敗")
                     else:
                         cl.sendMessage(to, "關鍵字已存在")
-                elif msg.text.lower().startswith("/bk_del"):
+                elif msg.text.lower().startswith("back_del"):
                     list_ = msg.text.split(":")
                     if list_[1] in settings['react']:
                         try:
